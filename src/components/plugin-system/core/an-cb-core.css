@@ -1,0 +1,106 @@
+:host {
+  border: 1px solid red;
+  min-height: 500px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  grid-template-rows: 50px 1fr 50px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+
+:host>* {
+  padding: 5px;
+  border: 1px dotted blueviolet;
+}
+
+
+.header {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.left {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.canvas {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.rigth {
+  grid-area: 2 / 3 / 4 / 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.rigth .charts {
+  min-height: 150px;
+  border: 1px dotted brown;
+}
+
+.rigth .actionPanel {
+  height: 100%;
+  border: 1px dotted brown;
+}
+
+.canvas .viz {
+  height: 100%;
+  border: 1px dotted brown;
+}
+
+.chart-list {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 5px;
+}
+
+.chart-icon {
+  border: 1px solid lightgray;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 2px;
+  cursor: pointer;
+}
+
+.chart-icon:hover {
+  background-color: rgb(237, 237, 237);
+}
+
+.chart-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+/* accordion */
+.accordion {
+  border: 1px solid lightgray;
+  margin-bottom: 1px;
+}
+
+.accordion-title {
+  background-color: lightgray;
+  padding: 5px;
+}
+
+.accordion-detail {
+  padding: 5px;
+}
+
+.setting-item {
+  padding: 5px;
+  border-bottom: 1px solid lightgray;
+}
+
+.accordion-detail .setting-item:last-child {
+  border-bottom: none;
+}

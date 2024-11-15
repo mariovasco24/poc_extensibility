@@ -1,0 +1,25 @@
+{
+  "name": "analytiq-ideas",
+  "version": "0.0.1",
+  "description": "Proof of Concepts only",
+  "unpkg": "dist/an-ideas/an-ideas.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "2.14.0",
+    "@stencil/sass": "1.5.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "27.4.0"
+  }
+}
